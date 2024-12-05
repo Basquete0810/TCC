@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Estágio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylerelatorio.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <img src="unicep.png" alt="UNICEP São Carlos Logo">
+        </div>
+    </header>
+    <div class="container p">
+        <h2>Relatório de Estágio</h2>
+        <form>
+            <div class="form-group">
+                <label for="data-inicio">Data de Início de Estágio</label>
+                <input type="date" id="data-inicio" name="data-inicio">
+            </div>
+            <div class="form-group">
+                <label for="data-termino">Data de Término de Estágio</label>
+                <input type="date" id="data-termino" name="data-termino">
+            </div>
+            <div class="form-group">
+                <label for="total-horas">Total de Horas Cumpridas</label>
+                <input type="number" id="total-horas" name="total-horas" placeholder="Ex.: 120">
+            </div>
+            <div class="form-group">
+                <label for="atividades">Principais Atividades Desenvolvidas:</label>
+                <textarea id="atividades" name="atividades" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="dificuldades">Dificuldades Encontradas:</label>
+                <textarea id="dificuldades" name="dificuldades" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="tecnicas">Técnicas Novas ou Diferentes das Aprendidas na Escola:</label>
+                <textarea id="tecnicas" name="tecnicas" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="equipamentos">Equipamentos Utilizados no Campo de Estágio:</label>
+                <textarea id="equipamentos" name="equipamentos" rows="4"></textarea>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Formulario de Estágio</h2>
+        <form>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Pergunta</th>
+                        <th>Sim</th>
+                        <th>Não</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Você teve oportunidade de passar pelos setores e compreender a razão dos procedimentos adotados?</td>
+                        <td><input type="radio" name="q1" value="Sim" required></td>
+                        <td><input type="radio" name="q1" value="Não"></td>
+                    </tr>
+                    <tr>
+                        <td>Você participou das rotinas de cada setor?</td>
+                        <td><input type="radio" name="q2" value="Sim" required></td>
+                        <td><input type="radio" name="q2" value="Não"></td>
+                    </tr>
+                    <tr>
+                        <td>Você detectou problemas de alguma natureza? Tais como planejamento, processo, produto, relacionamento.</td>
+                        <td><input type="radio" name="q3" value="Sim" required></td>
+                        <td><input type="radio" name="q3" value="Não"></td>
+                    </tr>
+                    <tr>
+                        <td>Sugeriu soluções ao supervisor responsável pelo setor relativas aos problemas detectados?</td>
+                        <td><input type="radio" name="q4" value="Sim" required></td>
+                        <td><input type="radio" name="q4" value="Não"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>COMO VOCÊ AVALIARIA SUA ATUAÇÃO COMO ESTAGIÁRIO:</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Pergunta</th>
+                        <th>Sim</th>
+                        <th>Não</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Participei das tarefas operacionais?</td>
+                        <td><input type="radio" name="q5" value="Sim" required></td>
+                        <td><input type="radio" name="q5" value="Não"></td>
+                    </tr>
+                    <tr>
+                        <td>Pratiquei atividades relativas aos conteúdos teóricos anteriormente estudados?</td>
+                        <td><input type="radio" name="q6" value="Sim" required></td>
+                        <td><input type="radio" name="q6" value="Não"></td>
+                    </tr>
+                    <tr>
+                        <td>Participei do planejamento e da execução das atividades?</td>
+                        <td><input type="radio" name="q7" value="Sim" required></td>
+                        <td><input type="radio" name="q7" value="Não"></td>
+                    </tr>
+                    <tr>
+                        <td>Compreendi o envolvimento de cada um dos setores da Organização?</td>
+                        <td><input type="radio" name="q8" value="Sim" required></td>
+                        <td><input type="radio" name="q8" value="Não"></td>
+                    </tr>
+                    <tr>
+                        <td>Identifiquei, junto aos diversos setores, o organograma da Organização?</td>
+                        <td><input type="radio" name="q9" value="Sim" required></td>
+                        <td><input type="radio" name="q9" value="Não"></td>
+                    </tr>
+                    <tr>
+                        <td>Constatei a importância do uso das técnicas e normas para a obtenção de resultados positivos nas diversas atividades desenvolvidas?</td>
+                        <td><input type="radio" name="q10" value="Sim" required></td>
+                        <td><input type="radio" name="q10" value="Não"></td>
+                    </tr>
+                    <tr>
+                        <td>Constatei que o planejamento físico influi diretamente no espaço funcional?</td>
+                        <td><input type="radio" name="q11" value="Sim" required></td>
+                        <td><input type="radio" name="q11" value="Não"></td>
+                    </tr>
+                    <tr>
+                        <td>Exerci minha liderança na condução de algumas atividades?</td>
+                        <td><input type="radio" name="q12" value="Sim" required></td>
+                        <td><input type="radio" name="q12" value="Não"></td>
+                    </tr>
+                    <tr>
+                        <td>Percebi como o planejamento de atividades necessita de adequação no decorrer do período?</td>
+                        <td><input type="radio" name="q13" value="Sim" required></td>
+                        <td><input type="radio" name="q13" value="Não"></td>
+                    </tr>
+                    <tr>
+                        <td>Constatei a importância de se conhecer o funcionamento de setores e suas interligações?</td>
+                        <td><input type="radio" name="q14" value="Sim" required></td>
+                        <td><input type="radio" name="q14" value="Não"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4 class="centered">_____________________________</h4>
+            <h4 class="centered"></h4>
+            <h4></h4>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="logopreta.png" alt="Logo dbt">
+        </div>
+        <p>© DBT - DataBaseTech</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

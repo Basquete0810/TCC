@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Empresa</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylecadastroempresa.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-logo">
+            <img src="unicep.png" alt="UNICEP São Carlos Logo">
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Cadastro de Empresa:</h1>
+        <form action="incluiempresa.php" method="POST" class="row g-3">
+
+            <div class="col-md-6">
+                <label for="razaoSoci_empresa" class="form-label">Razão Social da Empresa:</label>
+                <input type="text" class="form-control" name="razaoSoci_empresa" id="razaoSoci_empresa" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="nomeF_empresa" class="form-label">Nome Fantasia da Empresa:</label>
+                <input type="text" class="form-control" name="nomeF_empresa" id="nomeF_empresa" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="cnpj_empresa" class="form-label">CNPJ:</label>
+                <input type="text" class="form-control" name="cnpj_empresa" id="cnpj_empresa" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="ramal_empresa" class="form-label">Ramal:</label>
+                <input type="text" class="form-control" name="ramal_empresa" id="ramal_empresa" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="repLegal_empresa" class="form-label">Representante Legal:</label>
+                <input type="text" class="form-control" name="repLegal_empresa" id="repLegal_empresa" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="cargo" class="form-label">Cargo do Representante:</label>
+                <input type="text" class="form-control" name="cargo" id="cargo" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="rua_empresa" class="form-label">Rua:</label>
+                <input type="text" class="form-control" name="rua_empresa" id="rua_empresa" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="numero_empresa" class="form-label">Número:</label>
+                <input type="text" class="form-control" name="numero_empresa" id="numero_empresa" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="complemento_empresa" class="form-label">Complemento:</label>
+                <input type="text" class="form-control" name="complemento_empresa" id="complemento_empresa">
+            </div>
+
+            <div class="col-md-6">
+                <label for="cep" class="form-label">CEP:</label>
+                <input type="text" class="form-control" name="cep" id="cep" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="bairro" class="form-label">Bairro:</label>
+                <input type="text" class="form-control" name="bairro" id="bairro" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="cidade" class="form-label">Cidade:</label>
+                <input type="text" class="form-control" name="cidade" id="cidade" required>
+            </div>
+
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary">Cadastrar Empresa</button>
+            </div>
+        </form>
+    </div>
+
+ <footer class="footer">
+        <div class="footer-logo">
+            <img src="logopreta.png" alt="Logo dbt">
+        </div>
+        <p>© DBT - DataBaseTech</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-wpBkb9GI/7X+zAUQOmlbcRV77vzg+rphE+eTCz2m52nnrIzM0k2wRpaE4hpiF0Bo" crossorigin="anonymous"></script>
+</body>
+</html>
